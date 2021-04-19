@@ -4,7 +4,8 @@ To do this, run:
 
 `$ python3 SAP_backEnd.py`
 
-This will start up a HTTP server where if you navigate to `http://127.0.0.1:5000/` (or whatever URL it provides) it will run your `index.html`
+This will start up a HTTP server where if you navigate to `http://127.0.0.1:5000/` (or whatever URL it provides) 
+then need to run the `index.html` of Frondend
 
 Currently this project just simulate the login/logout/register-progress
 
