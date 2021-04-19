@@ -1,0 +1,74 @@
+/* base styles, feel free to edit */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, .0975);
+    padding: 10px;
+    background-color: white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner>*,
+footer>* {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+
+ /*Add your styles here*/
+
+
+#banner-follow-input-box,
+#banner-follow-button-box,
+#banner-main-page-button-box,
+#banner-profile-button-box,
+#banner-update-profile-button-box,
+#banner-refresh-button-box,
+#banner-new-post-button-box,
+#banner-edit-post-button-box,
+#banner-logout-button-box,
+/*#banner-login-button-box,*/
+#register-box,
+#feed-box,
+#user-profile-box,
+#usersPosts,
+#new-post-box,
+#update-profile-box {
+    display: none;
+
+}
+

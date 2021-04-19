@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My_SAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+
+<body>
+
+    <header class="banner">
+        <h1>My_SAP</h1>
+        <ul class="nav">
+
+            <li class="nav-item" id="banner-follow-input-box">
+                <label for="banner-follow-input-field"></label>
+                <input type="text" id="banner-follow-input-field"/>
+            </li>
+            <li class="nav-item" id="banner-follow-button-box">
+                <button id="banner-follow-button">Follow</button>
+            </li>
+            <li class="nav-item" id="banner-main-page-button-box">
+                <button id="banner-main-page-button">Main Page</button>
+            </li>
+            <li class="nav-item" id="banner-profile-button-box">
+                <button id="banner-profile-button">myProfile</button>
+            </li>
+            <li class="nav-item" id="banner-update-profile-button-box">
+                <button id="banner-update-profile-button">Update Profile</button>
+            </li>
+            <li class="nav-item" id="banner-refresh-button-box">
+                <button id="banner-refresh-button">refresh</button>
+            </li>
+            <li class="nav-item" id="banner-new-post-button-box">
+                <button id="banner-new-post-button">+ New blog</button>
+            </li>
+            <li class="nav-item" id="banner-edit-post-button-box">
+                <button id="banner-edit-post-button">edit blog</button>
+            </li>
+            <li class="nav-item" id="banner-logout-button-box">
+                <button id="banner-logout-button">Logout</button>
+            </li>
+
+
+            <li class="nav-item" id="banner-login-button-box">
+                <button id="banner-login-button">Login</button>
+            </li>
+
+            <li class="nav-item" id="banner-signup-button-box">
+                <button id="banner-signup-button">Register</button>
+            </li>
+
+        </ul>
+    </header>
+    <main role="main" id="main_frame">
+        <div id="main-info-show"></div>
+        <div id="main_frameA">
+            <div id="not-logged-in-state-box">
+                <div id="login-info-show">
+                    Please login <br>
+                </div>
+
+                <div id="login-box">
+
+                    <table class="login-items" id="login-table">
+                        <tr>
+                            <td>
+                                <label for="login-username">Username</label>
+                            </td>
+                            <td>
+                                <input type="text" name="login-username" id="login-username" placeholder="Username">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="login-password">Password</label>
+                            </td>
+                            <td>
+                                <input type="password" name="login-password" id="login-password" placeholder="Password" >
+                            </td>
+                        </tr>
+
+                    </table>
+                    <button class="login-items" type="button" id="login-submit-button">Submit</button>
+
+                </div>
+
+
+            </div>
+            <div id="logged-in-welcome-info-show">
+                welcome !
+
+            </div>
+            <div id="register-box">
+                <div id="welcome-register-info-show">
+                    welcome to register!
+                    <button id="close-welcome-register-button"> close</button>
+                </div>
+
+
+                <div id="register-error-info-show-box">
+                    <div id="register-error-info-text"></div>
+                    <button id="register-error-info-close-button"> close</button>
+                </div><br />
+
+                <table id="register-table">
+                    <tr>
+                        <td>
+                            <label for="register-username">Username</label>
+                        </td>
+                        <td>
+                            <input type="text" name="register-username" id="register-username" placeholder="Username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="register-password">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="register-password" id="register-password" placeholder="Password" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="confirm-register-password">Confirm password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="confirm-register-password" id="confirm-register-password" placeholder = "confirm password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="register-email">Email</label>
+                        </td>
+                        <td>
+                            <input type="text" name="register-email" id="register-email" placeholder="Your email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="register-real-name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="register-real-name" id="register-real-name" placeholder="Your name">
+                        </td>
+                    </tr>
+
+                </table>
+                <button type="button" id="register-submit-button">Submit</button>
+
+
+            </div>
+        </div>
+
+        <div id="main_frameB">
+
+        </div>
+
+
+
+
+        <div id="feed-box">
+            feed is here
+            <!-- implement here  -->
+
+            <!-- likelist 模块 -->
+        </div>
+
+
+        <!-- user profile -->
+        <div id="user-profile-box">
+            <div id="user-info-division"></div>
+
+            <div class="frame">
+                <div class="frame_profile">
+                    <div id="user-profile-page-Header">
+
+
+                        <div id="user-profile-page-showing-realname"></div>
+                        <div id="user-profile-page-showing-email"></div>
+                        <div id="user-profile-page-showing-id"></div>
+
+
+                        <div id="profile_follow_box">
+                            <div id="profile_following_content"> </div>
+                            <div id="profile_followed_content"> </div>
+                        </div>
+                        <div id="follow-box">
+                            <!--    follow     -->
+                            <button id="profile_toFollow_button">Follow</button>
+                            <button id="profile_toUnfollow_button">Unfollow</button>
+                            <button id="profile_toUpdate_button">Edie profile</button>
+                        </div>
+
+
+                    </div>
+                    <div id="Tab_layer">
+                        <ul id="Tab">
+                            <li id="Tab_follow">
+                                Following list
+                            </li>
+                            <li id="Tab_post">
+                                Posts
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frame_b">
+
+                    <div id="frame_left">
+                        <div id="followheader">
+                            <span>Follow:</span>
+                        </div>
+                        <div id="followBox">
+                            <ul id="follow_ul">
+                                <!-- add with JS file -->
+                                <!-- follow list here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="frame_right">
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div id="usersPosts"></div>
+
+
+        </div>
+
+        <!-- new post -->
+        <div id="new-post-box">
+            <div id="new-post-show-info">Share A post!</div>
+            <div id="new-post-input-box">
+                <label for="new-post-input-field"></label>
+                <textarea name="" id="new-post-input-field" cols="30" rows="10" placeholder="Write Something!"></textarea>
+            </div>
+            <div id="new-post-actions-box">
+                <input id="file-upload-button" type="file">
+                <button id="new-post-submit-button">post</button>
+            </div>
+        </div>
+
+        <!-- update the profile -->
+        <div id="update-profile-box">
+            <div id="update-profile-show-info">Update your profile information here</div>
+            <table id="update-profile-table">
+                <tr>
+                    <td>
+                        <label for="update-email">Email Address</label>
+                    </td>
+                    <td>
+                        <input type="text" name="update-email" id="update-email" placeholder="New email address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="update-password">Password</label>
+                    </td>
+                    <td>
+                        <input type="text" name="update-password" id="update-password" placeholder="New Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="update-real-name">New Email Address</label>
+                    </td>
+                    <td>
+                        <input type="text" name="update-real-name" id="update-real-name" placeholder="New name">
+                    </td>
+                </tr>
+            </table>
+            <button id="update-profile-submit-button">update</button>
+
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
